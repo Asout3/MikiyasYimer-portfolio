@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikiyas Yimer - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+           </script>
+           <script type="text/javascript">
+            (function(){
+            emailjs.init({
+             publicKey: "t4wqL7f9hk0FsRD28",
+            });
+            })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Hi, I'm Mikiyas Yimer</h1>
+        <p>Web Developer | Web Designer</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a web developer with a passion for building interactive, responsive websites. 
+            I hold a nanodegree from Udacity and specialize in front-end development.
+            I love creating projects that solve real-world problems and am always eager to learn new technologies.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Project 1: Movie Website</h3>
+                <p>A streaming platform built with different coding languages with solving real world problem.</p>
+                <a href="https:amharicmovies.pages.dev" class="btn">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: Color combiner</h3>
+                <p>A color combiner that tell the hex number and gives different colors each time.</p>
+                <a href=" https://asout3.github.io/hexComposer/" class="btn">View Project</a>
+            </div>
+
+            <div class="project-item">
+                <h3>Project 3: maze Game</h3>
+                <p>A very simple game made only for pc that any one can play it.</p>
+                <a href="https://asout3.github.io/maze-game/" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form onsubmit="sendEmail(event)">
+            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="email" placeholder="Your Email" id="email" required>
+            <textarea placeholder="Your Message" id="Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Mikiyas Yimer. All rights reserved.</p>
+        <br>
+       <p><i class="fas fa-phone"></i>    +251929956092</p> 
+       <p><i class="fab fa-instagram"></i>    asotu3</p> 
+       <p><i class="fab fa-telegram-plane"></i>    Asotu3</p> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
